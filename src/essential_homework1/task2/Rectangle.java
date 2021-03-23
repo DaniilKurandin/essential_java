@@ -13,7 +13,7 @@ public class Rectangle {
         while (true)
             if (scanner.hasNextDouble()) {
                 side1 = scanner.nextDouble();
-                if (side1 < 0 && side1 == 0) {
+                if (side1 < 0 || side1 == 0) {
                     System.out.println("Negative number, please repeat: ");
                 } else {
                     break;
@@ -27,7 +27,7 @@ public class Rectangle {
         while (true)
             if (scanner.hasNextDouble()) {
                 side2 = scanner.nextDouble();
-                if (side2 < 0 && side2 == 0 || side2 == side1) {
+                if (side2 < 0 || side2 == 0 || side2 == side1) {
                     System.out.println("Negative number, please repeat: ");
                 } else {
                     break;
