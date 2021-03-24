@@ -10,7 +10,7 @@ public class Rectangle {
         Scanner scanner = new Scanner(System.in);
 
         System.out.println("Enter the width of the rectangle: ");
-        while (true)
+        while (true) {
             if (scanner.hasNextDouble()) {
                 side1 = scanner.nextDouble();
                 if (side1 < 0 || side1 == 0) {
@@ -22,9 +22,10 @@ public class Rectangle {
                 System.out.println("Invalid value entered, please repeat: ");
                 scanner.hasNextLine();
             }
+        }
 
         System.out.println("Enter the length of the rectangle: ");
-        while (true)
+        while (true) {
             if (scanner.hasNextDouble()) {
                 side2 = scanner.nextDouble();
                 if (side2 < 0 || side2 == 0 || side2 == side1) {
@@ -36,6 +37,7 @@ public class Rectangle {
                 System.out.println("Invalid value entered, please repeat");
                 scanner.hasNextLine();
             }
+        }
 
         double area = side1 * side2;
         return area;
