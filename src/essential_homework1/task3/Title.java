@@ -1,10 +1,16 @@
 package essential_homework1.task3;
 
+import java.util.Scanner;
+
 public class Title extends Book {
-    String tittle;
+    String title;
+
+    public Title(String title) {
+        this.title = title;
+    }
 
     @Override
     void show() {
-        System.out.println(tittle = "Название книги: Борис Годунов");
+        System.out.println("Название: " + title);
     }
 }
