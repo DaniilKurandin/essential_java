@@ -1,7 +1,5 @@
 package essential_homework1.task4;
 
-import java.util.Arrays;
-
 public class Computer {
 
     Computers[] computers = new Computers[5];

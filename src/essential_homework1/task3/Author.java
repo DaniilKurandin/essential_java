@@ -1,7 +1,5 @@
 package essential_homework1.task3;
 
-import java.util.Scanner;
-
 public class Author extends Book {
     String author;
 
