@@ -10,7 +10,7 @@ public class Main {
         System.out.println("Введите ключ доступа: ");
         String key = scanner.nextLine();
 
-        switch (key){
+        switch (key) {
             case "exp": {
                 System.out.println("Вам доступна версия expert");
                 document = new ExpertDocumentWorker();
