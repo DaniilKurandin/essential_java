@@ -12,7 +12,7 @@ public class Player implements Playable, Recordable {
 
     @Override
     public void record() {
-        for (int i = 5; i > 0; i--) {
+        for (int i = 3; i > 0; i--) {
             System.out.println(i);
             try {
                 Thread.sleep(500);
@@ -20,7 +20,7 @@ public class Player implements Playable, Recordable {
             }
         }
 
-        System.out.println("Пехали!\n2 - Пауза\n4 - Стоп\n0 - Выход");
+        System.out.println("Запись\n2 - Пауза\n4 - Стоп\n0 - Выход");
     }
 
     @Override
