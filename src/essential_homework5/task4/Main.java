@@ -3,7 +3,6 @@ package essential_homework5.task4;
 import java.util.ArrayList;
 import java.util.Collections;
 
-
 public class Main {
     public static void main(String[] args) {
         ArrayList<Integer> numbers = new ArrayList<>();
