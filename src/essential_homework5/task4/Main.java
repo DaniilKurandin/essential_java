@@ -1,31 +1,40 @@
 package essential_homework5.task4;
 
 import java.util.ArrayList;
-import java.util.Collections;
+import java.util.ListIterator;
 
 public class Main {
     public static void main(String[] args) {
-        ArrayList<Integer> numbers = new ArrayList<>();
+        ArrayList<Integer> listOfWholeNumbers = new ArrayList<>();
 
-        // Список 10 рандомных значений в диапазоне от 10 - 20 включительно
-        for (int i = 0; i < 10; i++) {
-            int rand = 9 + (int) (Math.random() * 11 + 1);
-            numbers.add(rand);
+        for (int i = 0; i != 10; i++) {
+            listOfWholeNumbers.add(i, (int) (10 + Math.random() * 11));
         }
 
-        System.out.println(numbers);
+        int min = listOfWholeNumbers.get(0);
+        int max = listOfWholeNumbers.get(0);
 
-        // Индекс максимального и минимального значения
-        int max = Collections.max(numbers);
-        int min = Collections.min(numbers);
-
-        System.out.println("index max = " + numbers.indexOf(max));
-        System.out.println("index min = " + numbers.indexOf(min));
-
-        // Увеличиваем элементы списка на 1
-        for (int i = 0; i < numbers.size(); i++) {
-            numbers.set(i, numbers.get(i) + 1);
+        System.out.println(listOfWholeNumbers);
+        for (Integer i : listOfWholeNumbers) {
+            if (i < min) {
+                min = i;
+            }
+            if (i > max) {
+                max = i;
+            }
         }
-        System.out.println(numbers);
+
+        System.out.println("The INDEX of min is : " + listOfWholeNumbers.indexOf(min));
+        System.out.println("The INDEX of max is : " + listOfWholeNumbers.indexOf(max));
+
+        ListIterator<Integer> iterator = listOfWholeNumbers.listIterator();
+
+        int temp;
+        while (iterator.hasNext()) {
+            temp = iterator.next();
+            iterator.set(++temp);
+        }
+
+        System.out.println(listOfWholeNumbers);
     }
 }
