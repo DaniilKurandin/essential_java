@@ -5,15 +5,13 @@ public class Main {
     public static void main(String[] args) {
 
         ErrorPrinter instance = new ErrorPrinter() {
-            public final String ANSI_RESET = "\u001B[0m";
 
             @Override
             public void printError(String error) {
-                String RED = "\u001B[31m";
-                System.out.println(RED + error + " #FF0000" + ANSI_RESET);
+                System.out.println("\u001B[31m" + error + "\u001B[0m" + "\ncode color - #FF0000");
             }
         };
 
-        instance.printError("Любая строка будет красной");
+        instance.printError("any one string");
     }
 }
