@@ -1,4 +1,4 @@
-package essential_homwork8.task2;
+package essential_homework8.task2;
 
 import java.util.Arrays;
 import java.util.Comparator;

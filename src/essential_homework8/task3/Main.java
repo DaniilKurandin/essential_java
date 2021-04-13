@@ -1,4 +1,4 @@
-package essential_homwork8.task3;
+package essential_homework8.task3;
 
 public class Main {
     public static void main(String[] args) {

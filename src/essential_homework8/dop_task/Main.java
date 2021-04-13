@@ -1,4 +1,4 @@
-package essential_homwork8.dop_task;
+package essential_homework8.dop_task;
 
 public class Main {
     public static void main(String[] args) {

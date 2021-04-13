@@ -1,7 +1,4 @@
-package essential_homwork8.task3;
-
-import essential_homework3.dop_task.White;
-import essential_homwork8.task2.Worker;
+package essential_homework8.task3;
 
 import java.util.Arrays;
 import java.util.Comparator;

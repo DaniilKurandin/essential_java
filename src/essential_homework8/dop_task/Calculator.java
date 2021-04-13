@@ -1,4 +1,4 @@
-package essential_homwork8.dop_task;
+package essential_homework8.dop_task;
 
 import java.util.InputMismatchException;
 import java.util.Scanner;
@@ -17,7 +17,7 @@ public class Calculator {
         return a * b;
     }
 
-    void div(double a, double b) {
+    void div(int a, int b) {
         try {
             System.out.println(a / b);
         } catch (ArithmeticException e) {
@@ -51,7 +51,7 @@ public class Calculator {
                 }
                 case "/": {
                     System.out.println("Enter two numbers");
-                    div(sc.nextDouble(), sc.nextDouble());
+                    div(sc.nextInt(), sc.nextInt());
                     break;
                 }
             }

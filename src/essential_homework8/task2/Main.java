@@ -1,6 +1,4 @@
-package essential_homwork8.task2;
-
-import java.util.Arrays;
+package essential_homework8.task2;
 
 public class Main {
     public static void main(String[] args) {
