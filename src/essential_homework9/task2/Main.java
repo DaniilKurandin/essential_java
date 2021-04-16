@@ -36,5 +36,6 @@ public class Main {
         System.out.println("device1.equals(device3) = " + device1.equals(device3));
         System.out.println("device1.equals(device4) = " + device1.equals(device4));
         System.out.println("device1.equals(device5) = " + device1.equals(device5));
+
     }
 }

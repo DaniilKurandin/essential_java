@@ -40,6 +40,7 @@ public class Device {
     class Monitor {
         int resolutionX; // разрешение
         int resolutionY;
+        EthernetAdapter ethernetAdapter;
 
         public Monitor(int resolutionX, int resolutionY) {
             this.resolutionX = resolutionX;
