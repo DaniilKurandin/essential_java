@@ -6,13 +6,22 @@ import java.util.Arrays;
 public class ArrayList<T> {
     private Object[] array;
     private int index = 0;
+    private static final Object[] EMPTY = {};
+    private static final int DEFAULT_CAPACITY = 10;
 
-    public ArrayList() { // Стандартный размер массива 10
-        array = new Object[10];
+    public ArrayList() {
+        this.array = EMPTY;
     }
 
     public ArrayList(int capacity) { // Свой размер массива
-        array = new Object[capacity];
+        if (capacity > 0) {
+            this.array = new Object[DEFAULT_CAPACITY];
+        } else if (capacity == 0) {
+            this.array = EMPTY;
+        } else {
+            throw new IllegalArgumentException("uncorrected length: " +
+                    capacity);
+        }
     }
 
 
@@ -80,15 +89,11 @@ public class ArrayList<T> {
         return -1;
     }
 
-    void remove(int index) {
-        int length = array.length;
-        Object[] result = new Object[length - 1]; // Длина нового массива равна длине старого - 1
-// Копируем левую часть от индекса
-        System.arraycopy(array, 0, result, 0, index);
-// Копируем правую часть от индекса
-        System.arraycopy(array, index + 1, result, index, array.length - index - 1);
-
-    }
+//    void remove(int index) {
+//        for (int i = 0; i < array.length; i++) {
+//            if ()
+//        }
+//    }
 }
 
 

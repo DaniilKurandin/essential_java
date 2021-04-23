@@ -1,5 +1,7 @@
 package essential_homework10.dop_task;
 
+import java.util.Arrays;
+
 public class Main {
     public static void main(String[] args) {
         ArrayList arr = new ArrayList();
@@ -8,10 +10,7 @@ public class Main {
             arr.add(i);
         }
         System.out.println(arr);
-        System.out.println(arr.size());
 
-        arr.remove(2);
-        System.out.println(arr);
-        System.out.println(arr.size());
+
     }
 }
